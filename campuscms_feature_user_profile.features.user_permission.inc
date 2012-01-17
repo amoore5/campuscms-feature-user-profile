@@ -16,6 +16,7 @@ function campuscms_feature_user_profile_user_default_permissions() {
     'roles' => array(
       0 => 'administrator',
       1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'user',
   );
