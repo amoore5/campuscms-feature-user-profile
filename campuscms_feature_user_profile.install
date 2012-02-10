@@ -3,6 +3,7 @@
 function campuscms_feature_user_profile_install() {
   // Hide the history for the user.
   $settings = field_bundle_settings("user", "user");
+  $settings['extra_fields']['display']['summary']['default']['weight'] = '';
   $settings['extra_fields']['display']['summary']['default']['visible'] = FALSE;
   field_bundle_settings("user", "user", $settings);
 }
